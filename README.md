@@ -4,7 +4,7 @@
 
 Virtual Cursor is an Obsidian plugin that renders a second, highly visible caret on top of the CodeMirror 6 editor. It helps you keep track of the insertion point when the default cursor is hard to spot, and you can recolor it with the Style Settings community plugin.
 
-<a href="https://www.buymeacoffee.com/rien7"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a cola, please!&emoji=&slug=rien7&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+<a href="https://www.buymeacoffee.com/rien7"><img src="https://github.com/rien7/obsidian-virtual-cursor/.attachment/buymeacoffee.svg" /></a>
 
 ## Features
 - Draws a floating cursor element that mirrors the current insertion point.
