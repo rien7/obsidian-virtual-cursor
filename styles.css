@@ -1,8 +1,66 @@
-/*
+/* @settings
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
-
-If your plugin does not need CSS, delete this file.
+name: Virtual Cursor
+id: virtual-cursor-style
+settings:
+  - 
+    id: virtual-cursor-custom-color
+    title: Use Custom Color
+    description: Override the virtual cursor color. Defaults to the Obsidian accent when disable.
+    type: class-toggle
+  - 
+    id: virtual-cursor-color
+    title: Cursor color
+    type: variable-color
+    format: hex
+    default: '#007AFF'
 
 */
+
+body {
+  --virtual-cursor-color-default: var(--color-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-editor .cm-content {
+  caret-color: transparent;
+  position: relative;
+}
+
+.virtual-cursor {
+  position: absolute;
+  cursor: text;
+  pointer-events: none;
+  user-select: none;
+  transition: all 80ms;
+  letter-spacing: 0px;
+  display: block;
+  width: 2px;
+  overflow: hidden;
+  border-radius: 99px;
+}
+
+.cursor-phase {
+  animation: phase 0.5s ease-in-out 0s infinite alternate;
+}
+
+.cm-focused .virtual-cursor {
+  background-color: var(--virtual-cursor-color-default);
+  border-color: var(--virtual-cursor-color-default);
+}
+
+.virtual-cursor-custom-color .cm-focused .virtual-cursor {
+  background-color: var(--virtual-cursor-color, var(--virtual-cursor-color-default));
+  border-color: var(--virtual-cursor-color, var(--virtual-cursor-color-default));
+}
+
+@keyframes phase {
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    opacity: 0;
+  }
+}
