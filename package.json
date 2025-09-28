@@ -1,6 +1,6 @@
 {
 	"name": "virtual-cursor",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Obsidian plugin that draws a customizable virtual caret using CodeMirror 6.",
 	"main": "main.js",
 	"scripts": {

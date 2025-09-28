@@ -1,7 +1,7 @@
 {
 	"id": "virtual-cursor",
 	"name": "Virtual Cursor",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "1.5.0",
 	"description": "Adds a virtual cursor overlay to Obsidian's editor.",
 	"author": "RieN7",
