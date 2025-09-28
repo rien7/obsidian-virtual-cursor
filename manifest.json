@@ -3,7 +3,7 @@
 	"name": "Virtual Cursor",
 	"version": "1.0.1",
 	"minAppVersion": "1.5.0",
-	"description": "Adds a virtual cursor overlay to Obsidian's editor.",
+	"description": "Adds a virtual cursor overlay to editor.",
 	"author": "RieN7",
 	"authorUrl": "https://github.com/rien7",
 	"fundingUrl": "https://buymeacoffee.com/rien7",
